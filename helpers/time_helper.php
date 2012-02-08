@@ -88,7 +88,7 @@ function list_hours()
 {
 	$hours[''] = 'Hour';
 	
-	for ($h = 1; $h <= 24; $h++) 
+	for ($h = 1; $h < 24; $h++) 
 	{
 		$hour = str_pad($h, 2, '0', STR_PAD_LEFT);
 		$hours[$hour] = $hour;
@@ -99,13 +99,13 @@ function list_hours()
 
 // --------------------------------------------------------------------
 
-// outputs an array of the 60 minutes
+// outputs an array up to 60 with an interval parameter
 
-function list_minutes()
+function list_minutes($interval = 1)
 {
 	$minutes[''] = 'Minute';
 	
-	for ($m = 0; $m <= 60; $m++) 
+	for ($m = 0; $m < 60; $m = $m + $interval) 
 	{
 		$minute = str_pad($m, 2, '0', STR_PAD_LEFT);
 		$minutes[$minute] = $minute;
