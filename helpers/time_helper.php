@@ -6,10 +6,7 @@
  * Functions to produce arrays for form select fields for the CodeIgniter framework
  * 
  * @package   time_helper
- * @author    Ollie Rattue, Too many tabs <orattue[at]toomanytabs.com>
- * @copyright Copyright (c) 2010, Ollie Rattue
  * @license   http://www.opensource.org/licenses/mit-license.php
- * @link      https://github.com/ollierattue/codeigniter-time-helper
  */
 
 // --------------------------------------------------------------------
